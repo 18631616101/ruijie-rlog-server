@@ -12,14 +12,15 @@ nohup python3 server-liuran-180day.py > /dev/null 2> stderr.log &
 3.sudo yum install gzip  
 
 4.创建一个shell脚本compress_logs.sh
-···
+```
 #!/bin/bash
 
 log_directory="/path/to/your/log/directory"
 find "$log_directory" -type f -name "*.log" -mmin +1 -exec gzip {} \;
 
-···
-chmod +x compress_logs.sh
+```
+```chmod +x compress_logs.sh
 crontab -e
 每分钟运行一次压缩
 compress_logs.sh
+```
