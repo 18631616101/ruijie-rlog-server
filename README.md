@@ -25,3 +25,4 @@ crontab -e
 "* * * * * /path/to/compress_logs.sh"
 
 ```
+1万用户左右的网络目前压缩后大约每分钟5Mb
