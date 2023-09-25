@@ -22,6 +22,6 @@ find "$log_directory" -type f -name "*.log" -mmin +1 -exec gzip {} \;
 ```chmod +x compress_logs.sh
 crontab -e
 每分钟运行一次压缩
-* * * * * /path/to/compress_logs.sh
+"* * * * * /path/to/compress_logs.sh"
 
 ```
