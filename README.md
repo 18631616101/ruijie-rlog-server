@@ -3,11 +3,15 @@
 python
 记录NAT日志，每分钟保存一个文件，记录180天。
 
+---------------------------------------
+前期版本性能不太好，改成异步保存日志，正常运行了
+----------------------------------------
+
 ### 使用方法
 1.路由器上开启rlog，配置rlog server *.*.*.*
 
 2.在服务器上运行python脚本
-nohup python3 server-liuran-180day.py > /dev/null 2> stderr.log &
+nohup python3 server-asy-test.py > /dev/null 2> stderr.log &
 
 3.sudo yum install gzip  
 
