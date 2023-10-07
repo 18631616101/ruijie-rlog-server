@@ -32,4 +32,4 @@ crontab -e
 
 gunzip your_log.gz
 
-1万用户左右的网络目前压缩后大约每分钟5Mb
+1万用户左右的网络目前压缩后大约每分钟10Mb
